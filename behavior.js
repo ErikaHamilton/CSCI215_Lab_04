@@ -13,21 +13,13 @@ var I = [];
 // -----------------------------------
 // Convert Function Goes Here
  function convert() {
-   var dollar;
-   var selectElement;
-   var exchangeRate;
-   var index;
-   var currency;
-   dollar = document.getElementsByName('dollars')[0].value;
-   selectElement = document.getElementById('currency');
-   index = selectElement.selectedIndex;
-   currency = selectElement.options[index].text;
+  var dollar = document.getElementsByName('dollars')[0].value;
+  var selectElement = document.getElementById('currency');
+  var exchangeRate = selectElement.value;
+  var index = selectElement.selectedIndex;
+  var currency = selectElement.options[index].text;
+   updateExchange(dollar, exchangeRate, currency, index );
    }
-
-   updateExchange.call(dollar);
-   updateExchange.call(exchangeRate);
-   updateExchange.call(currency);
-   updateExchange.call(index);
 
 // -----------------------------------
 // Calculate Function Goes Here
