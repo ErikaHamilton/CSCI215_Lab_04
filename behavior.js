@@ -3,16 +3,12 @@
 
 // -----------------------------------
 // Global Variables Go Here
-var I = [//index [0]
-         'http://munsellb.people.cofc.edu/img/pound.jpeg',
-         //index [1]
-         'http://munsellb.people.cofc.edu/img/euro.jpeg',
-         //index [2]
-         'http://munsellb.people.cofc.edu/img/kroon.jpeg',
-         //index [3]
-         'http://munsellb.people.cofc.edu/img/canadian.jpeg',
-         //index [4]
-         'http://munsellb.people.cofc.edu/img/yuan.jpeg'];
+var I = [];
+ I[0] = 'http://munsellb.people.cofc.edu/img/pound.jpeg';
+ I[1] = 'http://munsellb.people.cofc.edu/img/euro.jpeg';
+ I[2] = 'http://munsellb.people.cofc.edu/img/kroon.jpeg';
+ I[3] = 'http://munsellb.people.cofc.edu/img/canadian.jpeg';
+ I[4] = 'http://munsellb.people.cofc.edu/img/yuan.jpeg';
 
 // -----------------------------------
 // Convert Function Goes Here
@@ -22,7 +18,7 @@ var I = [//index [0]
    var exchangeRate;
    var index;
    var currency;
-   dollar = document.getElementsByName("dollars")[0].value;
+   dollar = document.getElementsByName('dollars')[0].value;
    selectElement = document.getElementById('currency');
    index = selectElement.selectedIndex;
    currency = selectElement.options[index].text;
@@ -35,11 +31,11 @@ var I = [//index [0]
 
 // -----------------------------------
 // Calculate Function Goes Here
-funciton calculate(dollar, exchangeRate) {
+function calculate( dollar, exchangeRate) {
 
-  conversion = dollar * exchangeRate;
+  Convert = dollar * exchangeRate;
 
-  return conversion;
+  return Convert;
 
 }
 
